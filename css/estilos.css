@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.stylesansnarrow {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.sansupper {
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+}
+
+.informacion {
+  display: flex;
+  margin-top: 2rem;
+  text-align: left;
+  position: relative;
+  font-size: medium;
+  justify-content: space-around;
+}
+
+.envios {
+  margin-top: 2rem;
+  font-size: x-large;
+  text-decoration: underline;
+  margin-left: 2rem;
+}
+
+.p {
+  text-transform: lowercase;
+  font-weight: 200;
+  background-color: beige;
+  margin-left: 2rem;
+  width: 40rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.header1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu1 {
+  display: flex;
+  list-style: none;
+}
+
+.menu1 li {
+  margin-right: 10px;
+}
+
+.menu1 li a {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 50rem;
+  margin-bottom: 2rem;
+  width: 200px;
+}
+
+.imgcentral {
+  display: block;
+  width: 70%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navegacion {
+  width: 1300px;
+  margin-left: 30rem;
+}
+
+.navegacion ul {
+  position: relative;
+  list-style: none;
+}
+
+.menu > li {
+  position: relative;
+  display: inline-block;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 0px 15px 20px 20px;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-decoration: none;
+  position: relative;
+  font-size: 30px;
+  color: inherit;
+  width: 130px;
+  font-weight: 300;
+}
+
+.menu li a:hover {
+  color: orange;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+li ul {
+  position: absolute;
+  background: beige;
+  display: none;
+  font-size: 20px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 300;
+}
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.footer {
+  background-image: url(https://d3ugyf2ht6aenh.cloudfront.net/stores/663/203/themes/new_linkedman/1-slide-1617985676791-5404585750-562ea28af032461405a4eb412ca16f681617985686-1920-1920.webp?963423592);
+  color: black;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+  margin-top: 15rem;
+}
+
+.img1 {
+  margin-left: 100px;
+  width: 40px;
+}
+
+.img2 {
+  margin-left: 125px;
+  width: 40px;
+}
+
+.img3 {
+  margin-left: 150px;
+  width: 40px;
+}
+
+h2 {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    text-decoration: underline;
+}
+
+.productos ul li{
+    list-style: none;
+}
+
+.lista {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+.personalizado {
+  margin-top: 2rem;
+  margin-left: 15rem;
+}
+
+.article p{
+  margin-top: 3rem;
+  margin-left: 3rem;
+  line-height: 3rem;
+}
+
+.comprar img{
+  width: 60%;
+  height: 60%;
+  margin-top: 2rem;
+  margin-left: 15rem;
+}
+
+.contactanos{
+  display: flex;
+  justify-content: center;
+}
+
+.article {
+  display: flex;
+  gap: 30rem;
+}
+
+.envioswpp {
+  width: 4rem;
+}
+
+.articlecompras {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+
+.a{
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+#zonae {
+  margin-top: 2rem;
+  font-size: x-large;
+  text-decoration: underline;
+  margin-left: 2rem;  
+}
+
+.productosc {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+
+.container {
+  display: grid;
+}
