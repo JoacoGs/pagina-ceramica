@@ -10,17 +10,30 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Vajilla</title>
+
 </head>
 <body class="stylesnarrow">
-    <header></header>
-        <h1><strong> Ceramicando </strong></h1>
-            <img class="logo" src="images/logo.jpg" alt="Logo">
-            <!-- Logo de la pagina centrado -->
-            <!-- Carrito de compras y barra de busqueda (todavia no se como se hace)-->     
+    <div class="container">
+        <div class="header1">
+            <div>
+            <!-- Carrito de compras y barra de busqueda (todavia no se como se hace)-->    
+            </div>
+            <nav>
+                <ul class="menu1">
+                    <li><a href="#"> Crear cuenta</a></li>
+                    <li>|</li>
+                    <li><a href="#"> Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>    
+        <div>
+            <a href="index.html" target="blank"><img class="logo" src="images/logo.jpg" alt="Logo"></a>
+        </div>     
             <hr> 
             <nav class="navegacion">   
                 <ul class="menu"> 
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html" target="blank">Inicio</a></li>
                     <li><a href="vajilla.html">Vajilla</a>     
                         <ul class="submenu">
                             <li><a href="#"></a>Tazas</li>
@@ -36,36 +49,38 @@
             <hr>
     <article>
         <p>Inicio / <b>Vajilla</b></p>
-       <!--  <nav class="productos">   
-            <ul>
-                <li class="lista">Tazas</li>
-                <li class="lista">Platos</li>
-                <li class="lista">Bowls</li>
-                <li class="lista">Mates</li>
-                Cuando pueda usar grids voy a agregar la lista!
-            </ul> -->
-            <picture>
-                <div class="productosc">
-                    <p><img src="images/cuenco.jpg" alt="Cuenco"> <br> Cuenco blanco <br> $ xxx</p>
-                    <p><img src="images/fuente.jpg" alt="Fuente"> <br> Fuente blanca <br> $ xxx</p>
-                </div>
-                <div class="productosc">
-                    <p><img src="images/huevera.jpg" alt="huevera"> <br> Huevera blanca <br> $ xxx</p>
-                    <p><img src="images/sushi.jpg" alt="platosushi"> <br> Plato de sushi <br> $ xxx</p>
-                </div> 
-            </picture>  
-        </nav>
+        <div class="grid-container2">
+            <div class="item1">
+                <nav class="productos">   
+                <ul class="lista">
+                    <li><a href="#">Tazas</a></li>
+                    <li><a href="#">Platos</a></li>
+                    <li><a href="#">Bowls</a></li>
+                    <li><a href="#">Mates</a></li>
+                </ul></nav>
+            </div>
+            <div class="item2"><p><img src="images/cuenco.jpg" alt="Cuenco"> <br> Cuenco blanco <br> $ xxx</p></div>
+            <div class="item3"><p><img src="images/fuente.jpg" alt="Fuente"> <br> Fuente blanca <br> $ xxx</p></div>
+            <div class="item4"><p><img src="images/huevera.jpg" alt="huevera"> <br> Huevera blanca <br> $ xxx</p></div>
+            <div class="item5"><p><img src="images/sushi.jpg" alt="platosushi"> <br> Plato de sushi <br> $ xxx</p></div>
+            <div class="item6"><p><img src="images/tazagris.jpg" alt="tazagris"> <br> Tazon gris <br> $ xxx</p></div>
+            <div class="item7"><p><img src="images/mate.jpg" alt="mate"> <br> Mate <br> $ xxx</p></div>
+            <div class="item8"><p><img src="images/bowls.jpg" alt="taza"> <br> Bowls <br> $ xxx</p></div>
+            <div class="item9"><p><img src="images/cuencogris.jpg" alt="cuencogris"> <br> Cuenco gris <br> $ xxx</p></div>
+            <div class="item10"><p><img src="images/Taza.JPG" alt="taza"> <br> Taza <br> $ xxx</p></div>
+        </div>         
     </article>
-    <footer class="footer">
-        <div>
-            <h3>Contactanos</h3>
-            <nav>
-                <a href="https://wa.me/541160023620"><img class="img1" src="images/wpp.png" alt="Whatsapp" ></a>
-                <a href="https://instagram.com/ceramicandomarusaplana?utm_medium=copy_link"> <img class="img2" src="images/insta.png" alt="Instagram"></a>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlJWFnQcMnsktGMtMLvhccJhscxLnRJgqSLzrkGSPRPkxKGQFBxRzRWWZfGQzHgRCdjKdq"><img class="img3" src="images/gmail.png" alt="Gmail"></a>
-                <!-- Logos clickeables para redirigir a sus respectivas paginas--> 
-            </nav>
-        </div>    
-    </footer>           
+    <div class="container4">
+        <footer class="footer">
+            <div>
+                <h3>Contactanos</h3>
+                <nav class="espaciadofooter">
+                    <a href="https://wa.me/541160023620"><img class="img1" src="images/wpp.png" alt="Whatsapp" ></a>
+                    <a href="https://instagram.com/ceramicandomarusaplana?utm_medium=copy_link"> <img class="img2" src="images/insta.png" alt="Instagram"></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlJWFnQcMnsktGMtMLvhccJhscxLnRJgqSLzrkGSPRPkxKGQFBxRzRWWZfGQzHgRCdjKdq"><img class="img3" src="images/gmail.png" alt="Gmail"></a>
+                </nav>
+            </div>    
+        </footer>
+    </div>               
 </body>
 </html>
