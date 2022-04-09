@@ -369,7 +369,7 @@ h2 {
   text-align: center;
   padding: 10px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .grid-container2 {
     display: grid;
     grid-template-areas: 
@@ -381,7 +381,7 @@ h2 {
   } 
 }
  
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .grid-container2 {
     display: grid;
     grid-template-areas: 
@@ -467,7 +467,7 @@ h2 {
 
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .informacion {
     display: flex;
     flex-direction: row;
