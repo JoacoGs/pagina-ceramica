@@ -23,8 +23,7 @@
 .p {
   text-transform: lowercase;
   font-weight: 200;
-  background-color: bisque;
-  margin-left: 2rem;
+  background-image: linear-gradient(bottom to right, rgb(250, 95, 95), rgb(47, 47, 172));
   width: 40rem;
 }
 
@@ -402,7 +401,7 @@ h2 {
   .p {
     text-transform: lowercase;
     font-weight: 200;
-    background-color: bisque;
+    background-color: red;
     width: fit-content;
     margin-left: 5px;
     margin-top: 10px;
