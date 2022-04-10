@@ -28,10 +28,6 @@
   width: 40rem;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: auto;
-}
 
 .header1 {
   display: flex;
@@ -396,9 +392,7 @@ h2 {
     'img1'
     'list';
   }
-  .logo {
-    width: 100px;
-  }
+  
   .p {
     text-transform: lowercase;
     font-weight: 200;
