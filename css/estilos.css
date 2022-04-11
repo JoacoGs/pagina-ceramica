@@ -14,18 +14,12 @@
 
 .envios {
   margin-top: 2rem;
-  font-size: x-large;
-  text-decoration: underline;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .p {
   text-transform: lowercase;
   font-weight: 200;
-  background-image: linear-gradient(to bottom  right, rgb(250, 95, 95), rgb(47, 47, 172));
-  margin-left: 2rem;
-  width: 40rem;
+  background-image: linear-gradient(to bottom  right, bisque, rgba(167, 96, 11, 0.774)); 
 }
 
 
@@ -39,6 +33,7 @@
 .menu1 {
   display: flex;
   list-style: none;
+  justify-content: end;
 }
 
 .menu1 li {
@@ -75,6 +70,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 20px;
 }
 
 .navegacion {
@@ -166,11 +162,10 @@ li:hover ul {
   justify-content: space-around;
 }
 
-h2 {
-  margin-top: 3rem;
-  margin-left: 2rem;
+h3 {
+  margin-top: 2rem;
   text-decoration: underline;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .productos ul li{
@@ -178,8 +173,7 @@ h2 {
 }
 
 .lista li {
-  margin-top: 4rem;
-  margin-left: 2rem;
+  margin-top: 1rem;
   line-height: 2rem;
 }
 
@@ -462,7 +456,7 @@ h2 {
 
 
 @media only screen and (min-width: 768px) {
-  .informacion {
+  /* .informacion {
     display: flex;
     flex-direction: row;
     text-align: left;
@@ -470,11 +464,16 @@ h2 {
     font-size: medium;
     justify-content: space-around; 
     margin-top: 2rem;
-  }
+  } */
   .personalizado {
     display: none;
   }
   .articlecompras {
     display: none;
   }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
