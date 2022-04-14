@@ -19,7 +19,7 @@
 .p {
   text-transform: lowercase;
   font-weight: 200;
-  background-image: linear-gradient(to bottom  right, bisque, rgba(167, 96, 11, 0.774)); 
+  background-image: linear-gradient(to bottom  right, rgba(250, 247, 98, 0.884), rgba(228, 228, 228, 0.918)); 
 }
 
 
@@ -211,7 +211,7 @@ h3 {
 }
 
 .imgenvios {
-  width: 15%;
+  width: 10%;
 }
 
 .contactanos{
