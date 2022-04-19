@@ -19,15 +19,8 @@
 .p {
   text-transform: lowercase;
   font-weight: 200;
-  background-image: linear-gradient(to bottom  right, rgba(250, 247, 98, 0.884), rgba(228, 228, 228, 0.918)); 
-}
-
-
-.header1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  color: white;
+  background-image: linear-gradient(to bottom  right, rgb(0, 0, 0), rgba(43, 40, 40, 0.726)); 
 }
 
 .menu1 {
@@ -46,93 +39,12 @@
   text-decoration: none;
 }
 
-.container2 {
-  display: grid;
-  grid-template-columns: auto;
-}
-
 .logo {
-  display: block;
-  margin: auto;
-  margin-bottom: 2rem;
-  width: 200px;
+  width: 40%;
 }
 
-.imgcentral {
-  display: block;
-  width: 70%;
-  height: 70%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.informacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-.navegacion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navegacion ul {
-  list-style: none;
- /*  width: fit-content; */
-}
-
-.navegacion ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-.navegacion ul li a:hover {
-  color: orange;
-  transition: all 0.5s;
-}
-
-.menu > li {
-  display: inline-block;
-}
-
-.menu > li > a {
-  display: block;
-  padding: 30px;
-  width: 100%;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 25px;
-}
-
-li ul {
-  position: absolute;
-  display: none;
-  background-color: bisque;
-  width: 200px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.submenu a {
-  display: block;
-  padding: 5px;
-  font-family: "PT Sans Narrow", sans-serif;
-}
-
-li:hover ul {
-  display: block;
-}
-
-.container3 {
-  display: grid;
-  grid-template-columns: auto;
-}
-
-.container4 {
-  display: grid;
-  grid-template-columns: auto;
+.fondo li a{
+  color: rgba(255, 255, 255, 0.493);
 }
 
 .footer {
@@ -163,9 +75,12 @@ li:hover ul {
 }
 
 h3 {
-  margin-top: 2rem;
   text-decoration: underline;
   font-size: 14px;
+}
+
+.espaciado {
+  margin-top: 1rem;
 }
 
 .productos ul li{
@@ -182,14 +97,6 @@ h3 {
   color: black;
 }
 
-.personalizado {
-  display: block;
-  margin: auto;
-  width: fit-content;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .article p{
   line-height: 4rem;
   margin-left: 0px;
@@ -203,20 +110,14 @@ h3 {
   margin-bottom: 2rem;
 }
 
-.articlecom {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 2rem;
+.a {
+  text-decoration: none;
+  color: black;
+  font-weight: 200;
 }
 
 .imgenvios {
   width: 10%;
-}
-
-.contactanos{
-  display: flex;
-  justify-content: center;
 }
 
 .article {
@@ -226,37 +127,6 @@ h3 {
   line-height: 2rem;
 }
 
-.imagenpers {
-  background-image: url(../images/Personalizado.jpg);
-  background-repeat: no-repeat;
-  display: grid;
-  justify-content: end;
-  align-content: end;
-  width: 750px;
-  height: 550px;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  margin-bottom: 2rem;
-}
-
-.botonblanco {
-  color: black;
-    background-color: rgba(163, 59, 146, 0.61);
-    text-decoration: none;
-    text-align: center;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.a{
-  text-decoration: none;
-  color: black;
-  font-weight: 400;
-}
-
 #zonae {
   font-size: 20px;
   text-decoration: underline;
@@ -264,194 +134,13 @@ h3 {
   margin-top: 2rem; 
 }
 
-.productosc {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 5rem;
-}
-
-.grid-container2 {
-  display: grid;
-  grid-template-areas: 
-  'list img1 img2 img3'
-  'list img4 img5 img6'
-  'list img7 img8 img9';
-}
-
-.grid-container2 div{
-  display: grid;
-  background-color: bisque;
-  color: black;
-  border: 1px solid;
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.item1 {
-  display: grid;
-  grid-area: list;
-  text-align: start;
-}
-
-.item2 {
-  display: grid;
-  grid-area: img1;
-  text-align: center;
-  padding: 10px;
-}
-
-.item3 {
-  display: grid;
-  grid-area: img2;
-  text-align: center;
-  padding: 10px;
-}
-.item4 {
-  display: grid;
-  grid-area: img3;
-  text-align: center;
-  padding: 10px;
-}
-.item5 {
-  display: grid;
-  grid-area: img4;
-  text-align: center;
-  padding: 10px;
-}
-.item6 {
-  display: grid;
-  grid-area: img5;
-  text-align: center;
-  padding: 10px;
-}
-
-.item7 {
-  display: grid;
-  grid-area: img6;
-  text-align: center;
-  padding: 10px;
-}
-
-.item8 {
-  display: grid;
-  grid-area: img7;
-  text-align: center;
-  padding: 10px;
-}
-
-.item9 {
-  display: grid;
-  grid-area: img8;
-  text-align: center;
-  padding: 10px;
-}
-
-.item10 {
-  display: grid;
-  grid-area: img9;
-  text-align: center;
-  padding: 10px;
-}
-@media only screen and (max-width: 1024px) {
-  .grid-container2 {
-    display: grid;
-    grid-template-areas: 
-    'list img2'
-    'img3 img4'
-    'img5 img6'
-    'img7 img8'
-    'img9 img1';
-  } 
-}
- 
-@media only screen and (max-width: 768px) {
-  .grid-container2 {
-    display: grid;
-    grid-template-areas: 
-    'img2'
-    'img3'
-    'img4'
-    'img5'
-    'img6'
-    'img7'
-    'img8'
-    'img9'
-    'img1'
-    'list';
-  }
-  
-  .p {
-    text-transform: lowercase;
-    font-weight: 200;
-    background-color: bisque;
-    width: fit-content;
-    margin-left: 5px;
-    margin-top: 10px;
-  }
-  .envios {
-    margin-top: 10px;
-    font-size: x-large;
-    text-decoration: underline;
-    width: fit-content;
-    margin-left: 5px;
-  }
-  .menu > li > a {
-    font-size: 15px;
-    padding: 15px;
-  }
-  li ul {
-    font-size: 15px;
-    text-align: center;
-    width: 65px;
-  }
-  .a {
-    font-size: 12px;
-  }
-  
-  .img1 {
-    width: 30px;
-  }
-  .img2 {
-    width: 30px;
-  }
-  .img3 {
-    width: 30px;
-  }
-  .imagenpers {
-    display: none;
-  }
-  .articlecompras {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-  }
-  
-  .article {
-    margin-top: 20px;
-  }
-  
-  .lista li {
-    display: none;
-  }
-} 
-
-
-
-@media only screen and (min-width: 768px) {
-  /* .informacion {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    position: relative;
-    font-size: medium;
-    justify-content: space-around; 
-    margin-top: 2rem;
-  } */
-}
-
 .center {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 30%;
+  }
 }
