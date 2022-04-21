@@ -45,8 +45,8 @@
   text-decoration: none;
   color: black;
   font-weight: 200; }
-  .a :hover {
-    color: rgba(34, 97, 19, 0.829);
+  .a:hover {
+    color: #226113;
     font-weight: bold; }
   .a img {
     width: 5%; }
@@ -55,8 +55,8 @@
   text-decoration: none;
   color: black;
   font-weight: 200; }
-  .c :hover {
-    color: rgba(34, 97, 19, 0.829);
+  .c:hover {
+    color: #226113;
     font-weight: bold; }
   .c img {
     width: 10%; }
@@ -65,7 +65,7 @@
   text-decoration: none;
   color: black;
   font-weight: 200; }
-  .b :hover {
+  .b:hover {
     color: #3d3a3a;
     font-weight: bold; }
   .b img {

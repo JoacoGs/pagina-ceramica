@@ -3,8 +3,8 @@
     color: black;
     font-weight: 200;
     
-    :hover {
-        color: rgba(34, 97, 19, 0.829);
+    &:hover {
+        color: $colorwpp;
         font-weight: bold;
     }
 
