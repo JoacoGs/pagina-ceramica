@@ -1,0 +1,122 @@
+.logo {
+  width: 40%; }
+
+.menu1 {
+  display: flex;
+  list-style: none;
+  justify-content: end; }
+  .menu1 li {
+    margin-right: 10px; }
+    .menu1 li a {
+      color: black;
+      font-size: 15px;
+      text-decoration: none; }
+
+.espaciado {
+  padding: 15px; }
+  .espaciado h3 {
+    margin-top: 1rem;
+    text-decoration: underline;
+    font-size: 20px; }
+  .espaciado p {
+    text-transform: lowercase;
+    font-weight: 200;
+    color: white;
+    background-image: linear-gradient(to bottom right, black, rgba(43, 40, 40, 0.726)); }
+
+#zonae {
+  font-size: 20px;
+  text-decoration: underline;
+  margin-top: 2rem; }
+
+.fondo li a {
+  color: rgba(255, 255, 255, 0.493); }
+
+.lista {
+  list-style: none; }
+  .lista li {
+    margin-top: 1rem;
+    line-height: 2rem; }
+    .lista li a {
+      text-decoration: none;
+      color: black; }
+
+.center {
+  display: flex;
+  justify-content: center; }
+
+.a {
+  text-decoration: none;
+  color: black;
+  font-weight: 200; }
+  .a :hover {
+    color: rgba(34, 97, 19, 0.829);
+    font-weight: bold; }
+  .a img {
+    width: 5%; }
+
+.c {
+  text-decoration: none;
+  color: black;
+  font-weight: 200; }
+  .c :hover {
+    color: rgba(34, 97, 19, 0.829);
+    font-weight: bold; }
+  .c img {
+    width: 10%; }
+
+.b {
+  text-decoration: none;
+  color: black;
+  font-weight: 200; }
+  .b :hover {
+    color: #3d3a3a;
+    font-weight: bold; }
+  .b img {
+    width: 10%; }
+
+.article {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  line-height: 2rem; }
+  .article p {
+    line-height: 4rem;
+    margin-left: 0px; }
+
+.margen {
+  margin-top: 4px; }
+
+.footer {
+  background-image: url(https://d3ugyf2ht6aenh.cloudfront.net/stores/663/203/themes/new_linkedman/1-slide-1617985676791-5404585750-562ea28af032461405a4eb412ca16f681617985686-1920-1920.webp?963423592);
+  color: black;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 5rem; }
+
+.espaciadofooter {
+  display: flex;
+  justify-content: space-around; }
+  .espaciadofooter a {
+    background-color: none; }
+    .espaciadofooter a img {
+      width: 50px; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.stylesansnarrow {
+  font-family: "PT Sans Narrow", sans-serif; }
+
+.sansupper {
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase; }
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 30%; }
+  .a img {
+    width: 10%; } }

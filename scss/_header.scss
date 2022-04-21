@@ -1,0 +1,19 @@
+.logo {
+    width: 40%; 
+}
+
+.menu1 {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+
+    li {
+        margin-right: 10px;
+
+        a {
+            color: black;
+            font-size: 15px;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.article {
+    display: flex;
+    justify-content: space-evenly ;
+    flex-direction: row;
+    line-height: 2rem;
+
+    p {
+        line-height: 4rem;
+        margin-left: 0px;
+    }
+}
+
+.margen {
+    margin-top: 4px;
+}
