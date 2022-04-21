@@ -22,12 +22,8 @@
     text-transform: lowercase;
     font-weight: 200;
     color: white;
-    background-image: linear-gradient(to bottom right, black, rgba(43, 40, 40, 0.726)); }
-
-#zonae {
-  font-size: 20px;
-  text-decoration: underline;
-  margin-top: 2rem; }
+    background-image: linear-gradient(to bottom right, black, rgba(43, 40, 40, 0.726));
+    padding: 20px; }
 
 .fondo li a {
   color: rgba(255, 255, 255, 0.493); }
@@ -86,6 +82,11 @@
 
 .margen {
   margin-top: 4px; }
+
+#zonae {
+  font-size: 20px;
+  text-decoration: underline;
+  margin-top: 2rem; }
 
 .footer {
   background-image: url(https://d3ugyf2ht6aenh.cloudfront.net/stores/663/203/themes/new_linkedman/1-slide-1617985676791-5404585750-562ea28af032461405a4eb412ca16f681617985686-1920-1920.webp?963423592);
