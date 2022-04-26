@@ -1,10 +1,10 @@
 .a {
-    text-decoration: none;
+    text-decoration: map-get($estilos, decoration);
     color: black;
-    font-weight: 200;
+    font-weight: map-get($estilos, fontw);
     
     &:hover {
-        color: $colorwpp;
+        color: map-get($estilos, colorwpp);
         font-weight: bold;
     }
 

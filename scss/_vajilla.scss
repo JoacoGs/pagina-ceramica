@@ -1,3 +1,8 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+}
+
 .fondo {
     
     li {
@@ -23,7 +28,26 @@
 
 }
 
-.center {
-    display: flex;
-    justify-content: center;
+.producto {
+    @include center;
+    font-size: 16px;
 }
+
+.precio {
+    @include center;
+    font-size: 18px;
+}
+
+.button {
+    background-color: #e6e2d3; 
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 1rem;
+}
+
+.buttonprice { 
+    @extend .button;
+    background-color: #b9936c;
+}
+

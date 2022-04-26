@@ -1,5 +1,4 @@
-$colorwpp: #226113;
-
+@import "variables";
 @import "header";
 @import "index";
 @import "vajilla";
@@ -7,6 +6,7 @@ $colorwpp: #226113;
 @import "comprar";
 @import "contacto";
 @import "footer";
+
 
 * {
   padding: 0;
@@ -21,7 +21,6 @@ $colorwpp: #226113;
   font-family: "PT Sans Narrow", sans-serif;
   text-transform: uppercase;
 }
-
 
 
 @media only screen and (max-width: 768px) {
