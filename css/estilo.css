@@ -15,24 +15,36 @@
 .colorfondo {
   background-color: #c4b7a6; }
 
+.colornavbar {
+  background-color: #b9936c;
+  border-radius: 25px; }
+
 .espaciado {
   padding: 15px; }
   .espaciado h3 {
     margin-top: 1rem;
-    text-decoration: underline;
-    font-size: 20px; }
+    margin-bottom: 2rem;
+    font-size: 20px;
+    padding: 10px;
+    width: 320px;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom right, #b9936c, #dac292); }
   .espaciado p {
-    text-transform: lowercase;
+    padding: 20px;
     font-weight: 200;
-    color: white;
-    background-image: linear-gradient(to bottom right, black, rgba(43, 40, 40, 0.726));
-    padding: 20px; }
+    border-radius: 25px;
+    text-transform: lowercase;
+    color: black;
+    background-image: linear-gradient(to bottom right, #b9936c, #dac292); }
 
-.fondo li a {
-  color: rgba(255, 255, 255, 0.493); }
+.fondo {
+  background-color: #b9936c; }
+  .fondo li a {
+    color: #161616; }
 
 .lista {
-  list-style: none; }
+  list-style: none;
+  width: 200px; }
   .lista li {
     margin-top: 1rem;
     line-height: 2rem; }
@@ -59,6 +71,11 @@
 
 .buttonprice {
   background-color: #b9936c; }
+
+.fondolista {
+  background-image: linear-gradient(to bottom right, #b9936c, #dac292);
+  border-radius: 25px;
+  padding-top: 15px; }
 
 .a {
   text-decoration: none;
@@ -97,15 +114,27 @@
   line-height: 2rem; }
   .article p {
     line-height: 4rem;
-    margin-left: 0px; }
+    margin-left: 0px;
+    padding: 30px;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom right, #b9936c, #dac292); }
 
 .margen {
   margin-top: 4px; }
 
 #zonae {
   font-size: 20px;
-  text-decoration: underline;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 10px;
+  width: 170px;
+  border-radius: 25px;
+  background-image: linear-gradient(to bottom right, #b9936c, #dac292); }
+
+.table {
+  background-image: linear-gradient(to bottom right, #b9936c, #dac292);
+  padding: 30px;
+  border-radius: 50px; }
 
 .footer {
   background-image: url(https://d3ugyf2ht6aenh.cloudfront.net/stores/663/203/themes/new_linkedman/1-slide-1617985676791-5404585750-562ea28af032461405a4eb412ca16f681617985686-1920-1920.webp?963423592);

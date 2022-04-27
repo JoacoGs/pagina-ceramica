@@ -4,17 +4,19 @@
 }
 
 .fondo {
-    
+    background-color: #b9936c;
     li {
         
         a {
-            color: rgba(255, 255, 255, 0.493);
+            color: rgb(22, 22, 22);
+            
         }
     }
 }
 
 .lista{
     list-style: none;
+    width: 200px;
 
     li {
         margin-top: 1rem;
@@ -51,3 +53,8 @@
     background-color: #b9936c;
 }
 
+.fondolista {
+    background-image: linear-gradient(to bottom  right, #b9936c, #dac292);
+    border-radius: 25px;
+    padding-top: 15px;
+}
