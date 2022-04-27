@@ -1,10 +1,12 @@
 .logo {
-  width: 40%; }
+  width: 40%;
+  margin-top: 10px; }
 
 .menu1 {
   display: flex;
   list-style: none;
-  justify-content: end; }
+  justify-content: end;
+  margin-top: 15px; }
   .menu1 li {
     margin-right: 10px; }
     .menu1 li a {
@@ -18,6 +20,10 @@
 .colornavbar {
   background-color: #b9936c;
   border-radius: 25px; }
+
+.fondobutton {
+  background-image: linear-gradient(to bottom right, #b9936c, #dac292);
+  border-radius: 10px; }
 
 .espaciado {
   padding: 15px; }
@@ -66,7 +72,7 @@
   background-color: #e6e2d3;
   border-radius: 10px;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid;
   margin-top: 1rem; }
 
 .buttonprice {
@@ -119,22 +125,22 @@
     border-radius: 50px;
     background-image: linear-gradient(to bottom right, #b9936c, #dac292); }
 
-.margen {
-  margin-top: 4px; }
-
 #zonae {
   font-size: 20px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding: 10px;
   width: 170px;
   border-radius: 25px;
   background-image: linear-gradient(to bottom right, #b9936c, #dac292); }
 
-.table {
+.fondobutton2 {
   background-image: linear-gradient(to bottom right, #b9936c, #dac292);
-  padding: 30px;
-  border-radius: 50px; }
+  border-radius: 20px; }
+
+.fondobutton3 {
+  background-image: linear-gradient(to bottom right, #dac292, #b9936c);
+  padding: 15px;
+  border-radius: 25px; }
 
 .footer {
   background-image: url(https://d3ugyf2ht6aenh.cloudfront.net/stores/663/203/themes/new_linkedman/1-slide-1617985676791-5404585750-562ea28af032461405a4eb412ca16f681617985686-1920-1920.webp?963423592);

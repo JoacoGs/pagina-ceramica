@@ -23,8 +23,8 @@
                 <nav class="navbar navbar-light ">
                     <div class="container-fluid">
                       <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-dark" type="submit">Buscar</button>
+                        <input class="form-control me-2 btn-outline-dark fondobutton" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn fondobutton" type="submit">Buscar</button>
                       </form>
                     </div>
                   </nav>
@@ -96,44 +96,43 @@
                 <u>Instagram:</u> CeramicandoMaruSaplana <br> 
                 <u>Horarios de atencion:</u> Lu a Vi 09hs a 20hs Sa 10hs a 16hs </p>
             </div>
-            <div class="col-md-8 article">
-                <form  class="tabla1 table" action="contacto.html" method="post">
-                    <table border="0" cellpading="20" cellspacing="35">
-                        <tr>
-                            <td>Nombre</td>
-                            <td><input class="btn btn-outline-dark margen" type="text" value="" id="nombre" name="nombre" placeholder="Ingresá acá tu nombre!"></td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td><input  class="btn btn-outline-dark margen" type="email" value="" id="email" name="email" placeholder="Ingresá acá tu email!"></td> 
-                        </tr>
-                        <tr>
-                            <td>Desea recibir novedades?</Td>
-                            <td>
-                                <input type="checkbox" id="Si" name="si o no" value="Si"></td>
-                        </tr> 
-                        <tr>
-                            <td>Comentarios</td>
-                        </tr>
-                        <tr>
-                            <td><textarea class="btn btn-outline-dark" cols="30" rows="10" placeholder="Ingresá acá tus Comentarios!"></textarea></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input class="btn btn-outline-dark margen" type="reset" value="Limpiar formulario"/>
-                                <input class="btn btn-outline-dark margen" type="submit" value="Enviar formulario">
-                            </td>
-                        </tr>
-                    </table>
-                </form>    
+            <div class="col-md-3">   
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 id="zonae" >Zona de envios:</h2>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52666.07808292354!2d-58.66856056481605!3d-34.41075228591275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca41d589d6487%3A0x9efd06924549bdb5!2sRinc%C3%B3n%20de%20Milberg%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1646869498588!5m2!1sen!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" titulo="Zona de envios"></iframe>
+            <div class="col-md-4">
+                <h2 id="zonae" >Zona de envios:</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52666.07808292354!2d-58.66856056481605!3d-34.41075228591275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca41d589d6487%3A0x9efd06924549bdb5!2sRinc%C3%B3n%20de%20Milberg%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1646869498588!5m2!1sen!2sar" width="320" height="400" style="border:0;" allowfullscreen="" loading="lazy" titulo="Zona de envios"></iframe>
+            </div>
+            <div class="container-fluid fondobutton3">
+                <form  class="row g-3">
+                    <div class="col-md-5">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control btn-outline-dark fondobutton2" id="Nombre" placeholder="Ingresá acá tu nombre!" required>
                     </div>
-                </div>
+                    <div class="col-md-5">
+                        <label for="Apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control btn-outline-dark fondobutton2" id="Apellido" placeholder="Ingresá acá tu apellido!" required>
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="emailInfo" class="form-label">Email</label>
+                        <input type="email" class="form-control btn-outline-dark fondobutton2" id="emailInfo" placeholder="Ingresá acá tu email!" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="NumeroDeTelefono" class="form-label">Numero de telefono</label>
+                        <input type="text" class="form-control btn-outline-dark fondobutton2" id="numeroDeTelefono" placeholder="(+54 9 11)">
+                    </div>
+                    <div class="col-md-10">
+                        <label for="comentarios" class="form-label">Comentarios, preguntas?</label>
+                        <textarea class="form-control btn-outline-dark fondobutton2" id="comentarios" rows="4" placeholder="Ingresá acá tus comentarios y/o preguntas!" required></textarea>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="reset" class="btn btn-outline-dark fondobutton2">Limpiar formulario</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-outline-dark fondobutton2">Enviar formulario</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

@@ -13,22 +13,22 @@
     }
 }
 
-.margen {
-    margin-top: 4px;
-}
-
 #zonae {
     font-size: 20px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 10px;
     width: 170px;
     border-radius: 25px;
     background-image: linear-gradient(to bottom  right, #b9936c, #dac292); 
 }
 
-.table {
+.fondobutton2 {
     background-image: linear-gradient(to bottom  right, #b9936c, #dac292);
-    padding: 30px;
-    border-radius: 50px;
+    border-radius: 20px;
+}
+
+.fondobutton3 {
+    background-image: linear-gradient(to bottom right, #dac292, #b9936c);
+    padding: 15px;
+    border-radius: 25px;
 }

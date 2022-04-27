@@ -1,11 +1,13 @@
 .logo {
-    width: 40%; 
+    width: 40%;
+    margin-top: 10px; 
 }
 
 .menu1 {
     display: flex;
     list-style: none;
     justify-content: end;
+    margin-top: 15px;
 
     li {
         margin-right: 10px;
@@ -25,4 +27,9 @@
 .colornavbar {
     background-color: #b9936c;
     border-radius: 25px;
+}
+
+.fondobutton {
+    background-image: linear-gradient(to bottom  right, #b9936c, #dac292);
+    border-radius: 10px;
 }
