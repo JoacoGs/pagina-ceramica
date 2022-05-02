@@ -1,4 +1,5 @@
 @import "variables";
+@import "estructura";
 @import "header";
 @import "index";
 @import "vajilla";
@@ -8,27 +9,3 @@
 @import "footer";
 
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
-.stylesansnarrow {
-  font-family: "PT Sans Narrow", sans-serif;
-}
-
-.sansupper {
-  font-family: "PT Sans Narrow", sans-serif;
-  text-transform: uppercase;
-}
-
-
-@media only screen and (max-width: 768px) {
-  .logo {
-    width: 30%;
-  }
-
-  .a img {
-    width: 10%;
-  }
-}
