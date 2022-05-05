@@ -1,22 +1,35 @@
 .footer {
-    background-image: url(https://d3ugyf2ht6aenh.cloudfront.net/stores/663/203/themes/new_linkedman/1-slide-1617985676791-5404585750-562ea28af032461405a4eb412ca16f681617985686-1920-1920.webp?963423592);
-    color: black;
+    background-color: #753c1e;
+    color: rgb(20, 20, 20);
     font-family: "PT Sans Narrow", sans-serif;
-    text-transform: uppercase;
     font-size: 20px;
-    font-weight: 500;
     margin-top: 5rem;
+    border-radius: 25px;
+    height: 200px;
 }
 
 .espaciadofooter{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
 
     a {
+        margin-top: 1rem;
         background-color: none;
 
         img {
-            width: 50px;
+            width: 20%;
         }
     }
   }
+
+.logofooter {
+    width: 35%;
+    margin-left: 3rem;
+    border-radius: 60px;
+}
+
+.texto {
+    margin-top: 1rem;
+    font-size: 18px;
+}
