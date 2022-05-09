@@ -61,11 +61,11 @@
                             <a class="nav-link dropdown-toggle" href="vajilla.html" target="blank" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Vajilla
                             </a>
-                            <ul class="dropdown-menu fondo" style="background-color: #b9936c;" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="vajilla.html">Tazas</a></li>
-                              <li><a class="dropdown-item" href="vajilla.html">Platos</a></li>
-                              <li><a class="dropdown-item" href="vajilla.html">Bowls</a></li>
-                              <li><a class="dropdown-item" href="vajilla.html">Mates</a></li>
+                            <ul class="dropdown-menu" style="background-color: #b9936c;" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="vajilla.html#tazas">Tazas</a></li>
+                              <li><a class="dropdown-item" href="vajilla.html#cuencos">Cuencos</a></li>
+                              <li><a class="dropdown-item" href="vajilla.html#bowls">Bowls</a></li>
+                              <li><a class="dropdown-item" href="vajilla.html#mates">Mates</a></li>
                             </ul>
                           </li>
                           <li class="nav-item">
@@ -85,60 +85,94 @@
         </div>
         <hr>
     <article>
-        <p>Inicio / <b>Vajilla</b></p>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2 fondolista">
-                    <nav>   
-                        <ul class="lista">
-                            <li><a href="#">Tazas</a></li>
-                            <li><a href="#">Platos</a></li>
-                            <li><a href="#">Bowls</a></li>
-                            <li><a href="#">Mates</a></li>
-                            <!-- Links a futuras secciones dentro de los productos (a usarse como un filtro) -->
-                        </ul></nav>
-                </div>
-                <div class="col-md-3">
-                    <hr><img src="images/cuenco.jpg" class="img-fluid mx-auto d-block" alt="Cuenco"><p class="producto button"> Cuenco blanco </p><p class="precio buttonprice"> $xxx </p>
-                </div>
-                <div class="col-md-3">
-                    <hr><img src="images/fuente.jpg" class="img-fluid mx-auto d-block" alt="Fuente"><p class="producto button"> Fuente blanca </p><p class="precio buttonprice"> $xxx </p>
-                </div>
-                <div class="col-md-3">
-                    <hr><img src="images/huevera.jpg" class="img-fluid mx-auto d-block" alt="Huevera"><p class="producto button"> Huevera </p><p class="precio buttonprice"> $xxx </p>
-                </div> 
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <p>Inicio / <b>Vajilla</b></p>
+          </div>
+          <div class="col-md-6">
+          </div>
+          <div class="col-md-3">
+            <div class="dropdown">
+              <button class="btn  dropdown-toggle fondobutton" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Ordenar por
+              </button>
+              <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1" style="background-color: #b9936c;" >
+                <li><a class="dropdown-item" href="#">Precio mas bajo</a></li>
+                <li><a class="dropdown-item" href="#">Precio mas alto</a></li>
+                <li><a class="dropdown-item" href="#">Mas vendido</a></li>
+              </ul>
             </div>
+          </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2">
-                </div>
-                <div class="col-md-3">
-                    <hr><img src="images/mate.jpg" class="img-fluid mx-auto d-block" alt="Mate"><p class="producto button"> Mate </p><p class="precio buttonprice"> $xxx </p>
-                </div>
-                <div class="col-md-3">
-                    <hr><img src="images/bowls.jpg" class="img-fluid mx-auto d-block" alt="Bowls"><p class="producto button"> Bowls </p><p class="precio buttonprice"> $xxx </p>
-                </div>
-                <div class="col-md-3">
-                    <hr><img src="images/cuencogris.jpg" class="img-fluid mx-auto d-block" alt="cuencogris"><p class="producto button"> Cuenco gris </p><p class="precio buttonprice"> $xxx </p>
-                </div> 
+      </div>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-2 fondolista">
+                  <nav>   
+                      <ul class="lista">
+                          <li><a href="vajilla.html#tazas">Tazas</a></li>
+                          <li><a href="vajilla.html#cuencos">Cuencos</a></li>
+                          <li><a href="vajilla.html#bowls">Bowls</a></li>
+                          <li><a href="vajilla.html#mates">Mates</a></li>
+                      </ul></nav>
+              </div>
+              <div class="col-md-3">
+                  <hr><img id="cuencos" src="images/cuenco.jpg" class="img-fluid mx-auto d-block" alt="Cuenco"><p class="producto button"> Cuenco blanco </p><p class="precio buttonprice"> $xxx </p>
+              </div>
+              <div class="col-md-3">
+                  <hr><img src="images/cuencogris.jpg" class="img-fluid mx-auto d-block" alt="Cuenco gris"><p class="producto button"> Cuenco gris </p><p class="precio buttonprice"> $xxx </p>
+              </div>
+              <div class="col-md-3">
+                  <hr><img src="images/cuenco2.jpg" class="img-fluid mx-auto d-block" alt="Cuenco verde agua"><p class="producto button"> Cuenco verde agua </p><p class="precio buttonprice"> $xxx </p>
+              </div> 
+          </div>
+      </div>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-2">
+              </div>
+              <div class="col-md-3">
+                  <hr><img id="bowls" src="images/bowlsandia.jpg" class="img-fluid mx-auto d-block" alt="Bowl sandia"><p class="producto button"> Bowl sandia </p><p class="precio buttonprice"> $xxx </p>
+              </div>
+              <div class="col-md-3">
+                  <hr><img src="images/bowls.jpg" class="img-fluid mx-auto d-block" alt="Bowls grises"><p class="producto button"> Bowl gris </p><p class="precio buttonprice"> $xxx </p>
+              </div>
+              <div class="col-md-3">
+                  <hr><img src="images/bowlazul.jpg" class="img-fluid mx-auto d-block" alt="Bowl azul"><p class="producto button"> Bowl azul </p><p class="precio buttonprice"> $xxx </p>
+              </div> 
+          </div>
+      </div>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-2">
+              </div>
+              <div class="col-md-3">
+                  <hr><img id="tazas" src="images/Taza.JPG" class="img-fluid mx-auto d-block" alt="taza blanca"><p class="producto button"> Taza blanca </p><p class="precio buttonprice"> $xxx </p>
+              </div>
+              <div class="col-md-3">
+                  <hr><img src="images/tazamono.jpg" class="img-fluid mx-auto d-block" alt="taza de mono"><p class="producto button"> Taza Mono </p><p class="precio buttonprice"> $xxx </p>
+              </div>
+              <div class="col-md-3">
+                  <hr><img src="images/tazacangrejo.jpg" class="img-fluid mx-auto d-block" alt="taza de cangrejo"><p class="producto button"> Taza Cangrejo </p><p class="precio buttonprice"> $xxx </p>
+              </div> 
+          </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2">
-                </div>
-                <div class="col-md-3">
-                    <hr><img src="images/Taza.JPG" class="img-fluid mx-auto d-block" alt="taza blanca"><p class="producto button"> Taza blanca </p><p class="precio buttonprice"> $xxx </p>
-                </div>
-                <div class="col-md-3">
-                    <hr><img src="images/tazagris.jpg" class="img-fluid mx-auto d-block" alt="taza gris"><p class="producto button"> Taza gris </p><p class="precio buttonprice"> $xxx </p>
-                </div>
-                <div class="col-md-3">
-                    <hr><img src="images/sushi.jpg" class="img-fluid mx-auto d-block" alt="plato de sushi"><p class="producto button"> Plato de sushi </p><p class="precio buttonprice"> $xxx </p>
-                </div> 
+            <div class="col-md-3">
+                <hr><img id="mates" src="images/mate.jpg" class="img-fluid mx-auto d-block" alt="Mate gris"><p class="producto button"> Mate gris</p><p class="precio buttonprice"> $xxx </p>
             </div>
+            <div class="col-md-3">
+                <hr><img src="images/mategato.jpg" class="img-fluid mx-auto d-block" alt="Mate de gato"><p class="producto button"> Mate gatito </p><p class="precio buttonprice"> $xxx </p>
+            </div>
+            <div class="col-md-3">
+                <hr><img src="images/matezul.jpg" class="img-fluid mx-auto d-block" alt="Mate azul"><p class="producto button"> Mate azul </p><p class="precio buttonprice"> $xxx </p>
+            </div> 
         </div>
+    </div>
     </article>
     </main>
     <div class="container footer">
