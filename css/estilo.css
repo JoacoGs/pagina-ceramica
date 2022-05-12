@@ -13,7 +13,9 @@
   .logo {
     width: 30%; }
   .a img {
-    width: 10%; } }
+    width: 10%; }
+  .profile {
+    margin-top: 0px; } }
 
 .logo {
   width: 40%;
@@ -58,6 +60,10 @@
     border-radius: 25px;
     color: black;
     background-image: linear-gradient(to bottom right, #b9936c, #dac292); }
+
+.profile {
+  margin-top: 7rem;
+  text-align: center; }
 
 .fondo {
   background-color: #b9936c; }
@@ -164,13 +170,11 @@
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 20px;
   margin-top: 5rem;
-  border-radius: 25px;
-  height: 200px; }
+  border-radius: 25px; }
 
 .espaciadofooter {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  flex-direction: column; }
   .espaciadofooter a {
     margin-top: 1rem;
     background-color: none; }
