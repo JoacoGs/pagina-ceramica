@@ -9,8 +9,18 @@ function solicitarNombre () {
         alert("Error: Ingresar nombre y apellido");
     }   
 }
-
 solicitarNombre ();
+
+/* sumando cantidad de productos
+ */
+
+let resultado = 0
+function sumar (producto1, producto2, prodcuto3, producto4) {
+    resultado = producto1 + producto2 + prodcuto3 + producto4;
+}
+    
+sumar (2,3,1,5);
+console.log (resultado);
 
 /* calculando precio final
  */
@@ -21,3 +31,4 @@ let precioProducto = 750
 let descuento = 50
 let nuevoPrecio = resta(suma(precioProducto, iva (precioProducto)), descuento)
 console.log (nuevoPrecio)
+
