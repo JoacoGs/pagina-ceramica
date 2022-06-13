@@ -1,4 +1,4 @@
-function solicitarNombre () {
+/* function solicitarNombre () {
     let nombreIngresado = prompt ("Ingresar nombre");
     
     let apellidoIngresado = prompt ("Ingresar apellido");
@@ -9,18 +9,18 @@ function solicitarNombre () {
         alert("Error: Ingresar nombre y apellido");
     }   
 }
-solicitarNombre ();
+solicitarNombre (); */
 
 /* sumando cantidad de productos
  */
 
-let resultado = 0
+/* let resultado = 0
 function sumar (producto1, producto2, prodcuto3, producto4) {
     resultado = producto1 + producto2 + prodcuto3 + producto4;
 }
     
 sumar (2,3,1,5);
-console.log (resultado);
+console.log (resultado); */
 
 /* calculando precio final
  */
@@ -32,3 +32,65 @@ let descuento = 50
 let nuevoPrecio = resta(suma(precioProducto, iva (precioProducto)), descuento)
 console.log (nuevoPrecio)
 
+class Producto {
+    constructor (nombre, precio) {
+        this.nombre = nombre
+        this.precio = precio
+    }
+    mostrarProducto () {
+        return this.nombre;
+    }
+}
+
+const producto1 = new Producto ('Cuenco blanco', 750);
+const producto2 = new Producto ('Taza blanca', 600);
+const producto3 = new Producto ('Mate gris', 550);
+
+class DetallePedido {
+    constructor (producto, cantidad) {
+        this.producto = producto;
+        this.cantidad = cantidad;
+    }
+    calcularSubTotal (){
+        let subtotal = this.producto.precio * this.cantidad;
+        return subtotal;
+    }
+    mostrarDetalle (){
+        return '--' + this.cantidad + 'x' + this.producto.mostrarProducto();
+    }
+}
+
+const detallePedido1 = new DetallePedido (producto1, 3);
+const detallePedido2 = new DetallePedido (producto2, 2);
+const detallePedido3 = new DetallePedido (producto3, 1);
+
+class Pedido {
+    constructor (fecha, detalles){
+        this.fecha = fecha;
+        this.detalles = detalles;
+    }
+    calcularTotal (){
+        let total = 0;
+        for (const dp of this.detalles){
+            total = total + dp.calcularSubTotal ();
+        }
+        return total;
+    }
+    mostrarPedido (){
+        let texto = '';
+        for (const dp of this.detalles) {
+            texto += dp.mostrarDetalle() + '\n'
+        }
+        texto += this.calcularTotal()
+        return texto;
+    }
+}
+
+const array = [];
+array.push (detallePedido1);
+array.push (detallePedido2);
+array.push (detallePedido3);
+
+const pedido1 = new Pedido (new Date(), array);
+
+console.log (pedido1.mostrarPedido())
