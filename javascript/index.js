@@ -94,3 +94,8 @@ array.push (detallePedido3);
 const pedido1 = new Pedido (new Date(), array);
 
 console.log (pedido1.mostrarPedido())
+
+const inventario = ['Tazas', 'Bowls', 'Mates', 'Cuencos']
+
+console.log ( inventario.includes ('Mates'))
+console.log ( inventario.includes ('Platos'))
