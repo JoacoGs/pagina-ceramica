@@ -1,4 +1,4 @@
-/* function solicitarNombre () {
+ function solicitarNombre () {
     let nombreIngresado = prompt ("Ingresar nombre");
     
     let apellidoIngresado = prompt ("Ingresar apellido");
@@ -9,18 +9,18 @@
         alert("Error: Ingresar nombre y apellido");
     }   
 }
-solicitarNombre (); */
+solicitarNombre (); 
 
 /* sumando cantidad de productos
  */
 
-/* let resultado = 0
+ let resultado = 0
 function sumar (producto1, producto2, prodcuto3, producto4) {
     resultado = producto1 + producto2 + prodcuto3 + producto4;
 }
     
 sumar (2,3,1,5);
-console.log (resultado); */
+console.log (resultado); 
 
 /* calculando precio final
  */
