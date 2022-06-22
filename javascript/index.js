@@ -99,3 +99,16 @@ const inventario = ['Tazas', 'Bowls', 'Mates', 'Cuencos']
 
 console.log ( inventario.includes ('Mates'))
 console.log ( inventario.includes ('Platos'))
+
+const productos = [ { id: 1, nombre: "Taza blanca", precio: 600 },
+                    { id: 2, nombre: "Cuenco blanco", precio: 700 },
+                    { id: 3, nombre: "Bowl gris", precio: 550 },
+                    { id: 4, nombre: "Taza Mono", precio: 650 }];
+
+for ( const producto of productos) {
+    let contenedor = document.createElement ("div");
+    contenedor.innerHTML = `<h3> ID: ${producto.id}</h3>
+                            <p> Producto: ${producto.nombre}</p>
+                            <b> $ ${producto.precio}</b>`; 
+    document.body.appendChild (contenedor);
+}
