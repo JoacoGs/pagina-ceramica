@@ -44,6 +44,9 @@
   background-image: linear-gradient(to bottom right, #b9936c, #dac292);
   border-radius: 10px; }
 
+.cartIcon {
+  width: 25px; }
+
 .espaciado {
   padding: 15px; }
   .espaciado h3 {
@@ -95,10 +98,13 @@
   border-radius: 10px;
   text-align: center;
   border: 1px solid;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  padding: 15px;
+  width: auto; }
 
 .buttonprice {
-  background-color: #b9936c; }
+  background-color: #b9936c;
+  margin-top: 1rem; }
 
 .fondolista {
   background-image: linear-gradient(to bottom right, #b9936c, #dac292);
@@ -107,6 +113,41 @@
 
 .sup {
   margin-bottom: 1rem; }
+
+.fondobutton3 {
+  background-image: linear-gradient(to bottom right, #b9936c, #dac292);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.item-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.item-image {
+  width: 100%; }
+
+.shopping-cart-items {
+  padding: 20px 0px; }
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc; }
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px; }
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px; }
+
+.shopping-cart-total {
+  min-height: 96px; }
 
 .a {
   text-decoration: none;

@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -38,6 +40,11 @@
                         <li><a href="#"> Crear cuenta</a></li>
                         <li>|</li>
                         <li><a href="#"> Iniciar sesión</a></li>
+                        <li><a class="cart" href="carrito.html">
+                            <img class="cartIcon" src="images/carrito.png" alt="foto de carrito">
+                            <span id="cartCounter"></span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -119,13 +126,34 @@
                     </nav>
               </div>
               <div class="col-md-3">
-                  <hr><img id="cuencos" src="images/cuenco.jpg" class="img-fluid mx-auto d-block" alt="Cuenco"><p class="producto button"> Cuenco blanco </p><p class="precio buttonprice"> $xxx </p>
+                <div class="item">
+                  <hr><p class="item-title button"> Cuenco blanco </p>
+                  <img id="cuencos" class="item-image" src="images/cuenco.jpg" class="img-fluid mx-auto d-block" alt="Cuenco">
+                  <div class="item-details">                   
+                    <h4 class="item-price precio buttonprice"> $1500 </h4>
+                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                  </div> 
+                </div>                         
               </div>
               <div class="col-md-3">
-                  <hr><img src="images/cuencogris.jpg" class="img-fluid mx-auto d-block" alt="Cuenco gris"><p class="producto button"> Cuenco gris </p><p class="precio buttonprice"> $xxx </p>
+                <div class="item">
+                  <hr><p class="item-title button"> Cuenco gris </p>
+                  <img class="item-image" src="images/cuencogris.jpg" class="img-fluid mx-auto d-block" alt="Cuenco gris">
+                  <div class="item-details">                    
+                    <h4 class="item-price precio buttonprice"> $2000 </h4>
+                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                  </div>
+                </div>               
               </div>
               <div class="col-md-3">
-                  <hr><img src="images/cuenco2.jpg" class="img-fluid mx-auto d-block" alt="Cuenco verde agua"><p class="producto button"> Cuenco verde agua </p><p class="precio buttonprice"> $xxx </p>
+                <div class="item">
+                  <hr><p class="item-title button"> Cuenco verde agua </p>
+                  <img class="item-image" src="images/cuenco2.jpg" class="img-fluid mx-auto d-block" alt="Cuenco verde agua">
+                  <div class="item-details">                 
+                    <h4 class="item-price precio buttonprice"> $2000 </h4>
+                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                  </div>
+                </div> 
               </div> 
           </div>
       </div>
@@ -134,13 +162,34 @@
               <div class="col-md-2">
               </div>
               <div class="col-md-3">
-                  <hr><img id="bowls" src="images/bowlsandia.jpg" class="img-fluid mx-auto d-block" alt="Bowl sandia"><p class="producto button"> Bowl sandia </p><p class="precio buttonprice"> $xxx </p>
+                <div class="item">
+                  <hr><p class="item-title button"> Bowl sandia </p>
+                  <img id="bowls" class="item-image" src="images/bowlsandia.jpg" class="img-fluid mx-auto d-block" alt="Bowl sandia">
+                  <div class="item-details">                  
+                    <h4 class="item-price precio buttonprice"> $800 </h4>
+                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                  </div>
+                </div>
               </div>
               <div class="col-md-3">
-                  <hr><img src="images/bowls.jpg" class="img-fluid mx-auto d-block" alt="Bowls grises"><p class="producto button"> Bowl gris </p><p class="precio buttonprice"> $xxx </p>
+                <div class="item">
+                  <hr><p class="item-title button"> Bowl gris </p>
+                  <img class="item-image" src="images/bowls.jpg" class="img-fluid mx-auto d-block" alt="Bowls grises">
+                  <div class="item-details">                
+                    <h4 class="item-price precio buttonprice"> $1300 </h4>
+                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                  </div>
+                </div>
               </div>
               <div class="col-md-3">
-                  <hr><img src="images/bowlazul.jpg" class="img-fluid mx-auto d-block" alt="Bowl azul"><p class="producto button"> Bowl azul </p><p class="precio buttonprice"> $xxx </p>
+                <div class="item">
+                  <hr><p class="item-title button"> Bowl azul </p>
+                  <img class="item-image" src="images/bowlazul.jpg" class="img-fluid mx-auto d-block" alt="Bowl azul">
+                  <div class="item-details">                 
+                    <h4 class="item-price precio buttonprice"> $1300 </h4>
+                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                  </div>
+                </div>            
               </div> 
           </div>
       </div>
@@ -149,13 +198,34 @@
               <div class="col-md-2">
               </div>
               <div class="col-md-3">
-                  <hr><img id="tazas" src="images/Taza.JPG" class="img-fluid mx-auto d-block" alt="taza blanca"><p class="producto button"> Taza blanca </p><p class="precio buttonprice"> $xxx </p>
+                <div class="item">
+                  <hr><p class="item-title button"> Taza blanca </p>
+                  <img id="tazas" class="item-image" src="images/Taza.JPG" class="img-fluid mx-auto d-block" alt="taza blanca">
+                  <div class="item-details">
+                    <h4 class="item-price precio buttonprice"> $700 </h4>
+                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                  </div>
+                </div>                
               </div>
               <div class="col-md-3">
-                  <hr><img src="images/tazamono.jpg" class="img-fluid mx-auto d-block" alt="taza de mono"><p class="producto button"> Taza Mono </p><p class="precio buttonprice"> $xxx </p>
+                <div class="item">
+                  <hr><p class="item-title button"> Tazon mono </p>
+                  <img class="item-image" src="images/tazamono.jpg" class="img-fluid mx-auto d-block" alt="tazon de mono">
+                  <div class="item-details">              
+                    <h4 class="item-price precio buttonprice"> $1200 </h4>
+                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                  </div>
+                </div>            
               </div>
               <div class="col-md-3">
-                  <hr><img src="images/tazacangrejo.jpg" class="img-fluid mx-auto d-block" alt="taza de cangrejo"><p class="producto button"> Taza Cangrejo </p><p class="precio buttonprice"> $xxx </p>
+                <div class="item">
+                  <hr><p class="item-title button"> Taza cangrejo </p>
+                  <img class="item-image" src="images/tazacangrejo.jpg" class="img-fluid mx-auto d-block" alt="taza de cangrejo">
+                  <div class="item-details">                
+                    <h4 class="item-price precio buttonprice"> $1000 </h4>
+                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                  </div>
+                </div>              
               </div> 
           </div>
       </div>
@@ -164,17 +234,87 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-3">
-                <hr><img id="mates" src="images/mate.jpg" class="img-fluid mx-auto d-block" alt="Mate gris"><p class="producto button"> Mate gris</p><p class="precio buttonprice"> $xxx </p>
+              <div class="item">
+                <hr><p class="item-title button"> Mate gris </p>
+                <img id="mates" class="item-image" src="images/mate.jpg" class="img-fluid mx-auto d-block" alt="Mate gris">
+                <div class="item-details">             
+                  <h4 class="item-price precio buttonprice"> $800 </h4>
+                  <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                </div>
+              </div>       
             </div>
             <div class="col-md-3">
-                <hr><img src="images/mategato.jpg" class="img-fluid mx-auto d-block" alt="Mate de gato"><p class="producto button"> Mate gatito </p><p class="precio buttonprice"> $xxx </p>
+              <div class="item">
+                <hr><p class="item-title button"> Mate gato</p>
+                <img class="item-image" src="images/mategato.jpg" class="img-fluid mx-auto d-block" alt="Mate de gato">
+                <div class="item-details">                
+                  <h4 class="item-price precio buttonprice"> $800 </h4>
+                  <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                </div>
+              </div>             
             </div>
             <div class="col-md-3">
-                <hr><img src="images/matezul.jpg" class="img-fluid mx-auto d-block" alt="Mate azul"><p class="producto button"> Mate azul </p><p class="precio buttonprice"> $xxx </p>
+              <div class="item">
+                <hr><p class="item-title button"> Mate azul </p>
+                <img class="item-image" src="images/matezul.jpg" class="img-fluid mx-auto d-block" alt="Mate azul">
+                <div class="item-details">
+                  <h4 class="item-price precio buttonprice"> $750 </h4>
+                  <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                </div>
+              </div>              
             </div> 
         </div>
     </div>
     </article>
+    <!-- CARRITO DE COMPRAS -->
+    <section class="shopping-cart">
+      <div class="container">
+          <h1 class="text-center">CARRITO</h1>
+          <hr>
+          <div class="row">
+              <div class="col-6">
+                  <div class="shopping-cart-header">
+                      <h6>Producto</h6>
+                  </div>
+              </div>
+              <div class="col-2">
+                  <div class="shopping-cart-header">
+                      <h6 class="text-truncate">Precio</h6>
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="shopping-cart-header">
+                      <h6>Cantidad</h6>
+                  </div>
+              </div>
+          </div>
+          <div class="shopping-cart-items shoppingCartItemsContainer">
+          </div>
+          <!-- TOTAL -->
+          <div class="row">
+            <div class="col-12">
+                <div class="shopping-cart-total d-flex align-items-center">
+                    <p class="mb-0">Total</p>
+                    <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                    <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                        data-delay="2000">
+                        <div class="toast-header">
+                            <span>✅</span>
+                            <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body text-white">
+                            Se aumentó correctamente la cantidad
+                        </div>
+                    </div>
+                    <button class="btn btn-success ml-auto comprarButton fondobutton2" type="button" data-toggle="modal" data-target="#comprarModal">Comprar</button>                   
+                </div>
+            </div>
+          </div>
+      </div>
+    </section>  
     </main>
     <div class="container footer">
         <footer class="row p-3">
@@ -204,6 +344,16 @@
             </div>    
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>                     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="javascript/vajilla.js"></script>                     
 </body>
 </html>
