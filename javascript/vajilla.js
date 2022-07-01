@@ -1,168 +1,86 @@
-/* let productos = [
-    {
-        "id":"001",
-        "nombre":"Cuenco blanco",
-        "precio":700,
-        "img":"images/cuenco.jpg",
-        "desc":""
-    },
-    {
-        "id":"002",
-        "nombre":"Cuenco gris",
-        "precio":700,
-        "img":"images/cuencogris.jpg",
-        "desc":""
-    },
-    {
-        "id":"003",
-        "nombre":"Cuenco verde agua",
-        "precio":700,
-        "img":"images/cuenco2.jpg",
-        "desc":""
-    },
-    {
-        "id":"004",
-        "precio":600,
-        "nombre":"Bowl sandia",
-        "img":"images/bowlsandia.jpg",
-        "desc":""
-    },
-    {
-        "id":"005",
-        "nombre":"Bowl gris",
-        "precio":600,
-        "img":"images/bowls.jpg",
-        "desc":""
-    },
-    {
-        "id":"006",
-        "nombre":"Bowl azul",
-        "precio":600,
-        "img":"./images/bowlazul.jpg",
-        "desc":""
-    },
-    {
-        "id":"007",
-        "nombre":"Taza blanca",
-        "precio":650,
-        "img":"./images/Taza.jpg",
-        "desc":""
-    },
-    {
-        "id":"008",
-        "nombre":"Taza de mono",
-        "precio":700,
-        "img":"./images/tazamono.jpg",
-        "desc":""
-    },
-    {
-        "id":"009",
-        "nombre":"Taza de cangrejo",
-        "precio":700,
-        "img":"./images/tazacangrejo.jpg",
-        "desc":""
-    },
+/* function initializeCart() {
+  if (!window.localStorage.hasOwnProperty("cart")) {
+    window.localStorage.cart = [];
+  }
+}
+
+initializeCart(); */
+/* Local Storage  */
+/* const productos = [
+  { id: 1, producto: "Bowl", precio: 800 },
+  { id: 2, producto: "Cuenco", precio: 1000 },
+  { id: 3, producto: "Taza", precio: 1000 },
 ];
 
-let carrito;
+const guardarLocal = (clave, valor) => {
+  localStorage.setItem(clave, valor);
+};
 
-if(JSON.parse(localStorage.getItem('carrito'))) {
-    carrito= JSON.parse(localStorage.getItem('carrito'))
-} else {
-    localStorage.setItem('carrito', JSON.stringify([]))
-    carrito = JSON.parse(localStorage.getItem('carrito'))
+for (const producto of productos) {
+  guardarLocal(producto.id, JSON.stringify(producto));
 }
 
-function desplegarProductos() {
+guardarLocal("listaProductos", JSON.stringify(productos));
 
-    for (let i =0; i < productos.length; i++) {
-        const element = productos [i];
-        const { id, nombre, precio, img} = element
-        const card = `
-        <div class= 'card'>
-            <p> ${nombre}</p>
-            <div>
-                <img class='imgProducto' src =${img} alt=''/>
-            <div>
-            <div class="btn-container">
-                <button id=${id} class='btnAgregar'> AGREGAR AL CARRITO </button>
-            <div>
-        <div>
-        `
-        const container = document.getElementById ('container')
-        container.innerHTML += card
-    }
+class Producto {
+  constructor(obj) {
+    this.nombre = obj.producto.toUpperCase();
+    this.precio = parseFloat(obj.precio);
+  }
+  sumaIva() {
+    this.precio = this.precio * 1.21;
+  }
 }
 
-const btnAgregar =document.getElementsByClassName('btnAgregar')
+const almacenados = JSON.parse(localStorage.getItem("listaProductos"));
+const productos = [];
+for (const objeto of almacenados) productos.push(new Producto(objeto));
+for (const producto of productos) producto.sumaIva(); */
+/* Termina Local Storage */
 
-for ( let i = 0; i < btnAgregar.length; i++) {
-   const element = btnAgregar[i];
-   element.addEventListener('click', agregarAlCarrito) 
-}
-
-desplegarProductos()
-
-function agregarAlCarrito(e) {
-    const btn = e.target;
-    const idBoton = btn.getAttribute ('id')
-    const prodEncontrado = productos.find(prod = prod.id == idBoton)
-    const encarrito = carrito.find (prod => prod.id == prodEncontrado.id)
-    console.log(enCarrito)
-    if(!enCarrito) {
-        carrito.push({...prodEncontrado, cantidad: 1})
-    } else {
-        let carritoFiltrado = carrito.filter(prod => prod.id != enCarrito.id)
-        carrito = [...carritoFiltrado, {...enCarrito, cantidad: enCarrito.cantidad + 1}]
-    } 
-    localStorage.setItem('carrito', JSON.stringify(carrito))
-}
-
-const contador = document.getElementById('contador')
-contador.innerHTML = carrito.length */
-
-const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
+const addToShoppingCartButtons = document.querySelectorAll(".addToCart");
 addToShoppingCartButtons.forEach((addToCartButton) => {
-  addToCartButton.addEventListener('click', addToCartClicked);
+  addToCartButton.addEventListener("click", addToCartClicked);
 });
 
-const comprarButton = document.querySelector('.comprarButton');
-comprarButton.addEventListener('click', comprarButtonClicked);
+const comprarButton = document.querySelector(".comprarButton");
+comprarButton.addEventListener("click", comprarButtonClicked);
 
 const shoppingCartItemsContainer = document.querySelector(
-  '.shoppingCartItemsContainer'
+  ".shoppingCartItemsContainer"
 );
 
 function addToCartClicked(event) {
   const button = event.target;
-  const item = button.closest('.item');
-  
-   const itemTitle = item.querySelector('.item-title').textContent;
-  const itemPrice = item.querySelector('.item-price').textContent;
-  const itemImage = item.querySelector('.item-image').src;
+  console.log(event);
+  const item = button.closest(".item");
+
+  const itemTitle = item.querySelector(".item-title").textContent;
+  const itemPrice = item.querySelector(".item-price").textContent;
+  const itemImage = item.querySelector(".item-image").src;
 
   addItemToShoppingCart(itemTitle, itemPrice, itemImage);
 }
 
 function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
   const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(
-    'shoppingCartItemTitle'
+    "shoppingCartItemTitle"
   );
   for (let i = 0; i < elementsTitle.length; i++) {
     if (elementsTitle[i].innerText === itemTitle) {
-       let elementQuantity = elementsTitle[
+      let elementQuantity = elementsTitle[
         i
       ].parentElement.parentElement.parentElement.querySelector(
-        '.shoppingCartItemQuantity'
+        ".shoppingCartItemQuantity"
       );
       elementQuantity.value++;
-      $('.toast').toast('show');
+      $(".toast").toast("show");
       updateShoppingCartTotal();
       return;
-    } 
+    }
   }
 
-  const shoppingCartRow = document.createElement('div');
+  const shoppingCartRow = document.createElement("div");
   const shoppingCartContent = `
   <div class="row shoppingCartItem">
         <div class="col-6">
@@ -189,31 +107,31 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
   shoppingCartItemsContainer.append(shoppingCartRow);
 
   shoppingCartRow
-    .querySelector('.buttonDelete')
-    .addEventListener('click', removeShoppingCartItem);
+    .querySelector(".buttonDelete")
+    .addEventListener("click", removeShoppingCartItem);
 
   shoppingCartRow
-    .querySelector('.shoppingCartItemQuantity')
-    .addEventListener('change', quantityChanged);
+    .querySelector(".shoppingCartItemQuantity")
+    .addEventListener("change", quantityChanged);
 
   updateShoppingCartTotal();
 }
 
 function updateShoppingCartTotal() {
   let total = 0;
-  const shoppingCartTotal = document.querySelector('.shoppingCartTotal');
+  const shoppingCartTotal = document.querySelector(".shoppingCartTotal");
 
-  const shoppingCartItems = document.querySelectorAll('.shoppingCartItem');
+  const shoppingCartItems = document.querySelectorAll(".shoppingCartItem");
 
   shoppingCartItems.forEach((shoppingCartItem) => {
     const shoppingCartItemPriceElement = shoppingCartItem.querySelector(
-      '.shoppingCartItemPrice'
+      ".shoppingCartItemPrice"
     );
     const shoppingCartItemPrice = Number(
-      shoppingCartItemPriceElement.textContent.replace('$', '')
+      shoppingCartItemPriceElement.textContent.replace("$", "")
     );
     const shoppingCartItemQuantityElement = shoppingCartItem.querySelector(
-      '.shoppingCartItemQuantity'
+      ".shoppingCartItemQuantity"
     );
     const shoppingCartItemQuantity = Number(
       shoppingCartItemQuantityElement.value
@@ -225,7 +143,7 @@ function updateShoppingCartTotal() {
 
 function removeShoppingCartItem(event) {
   const buttonClicked = event.target;
-  buttonClicked.closest('.shoppingCartItem').remove();
+  buttonClicked.closest(".shoppingCartItem").remove();
   updateShoppingCartTotal();
 }
 
@@ -236,6 +154,6 @@ function quantityChanged(event) {
 }
 
 function comprarButtonClicked() {
-  shoppingCartItemsContainer.innerHTML = '';
+  shoppingCartItemsContainer.innerHTML = "";
   updateShoppingCartTotal();
 }
