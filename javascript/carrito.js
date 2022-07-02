@@ -1,5 +1,5 @@
 /* Local Storage  */
- const productos = [
+const productos = [
   { id: 1, producto: "Bowl", precio: 800 },
   { id: 2, producto: "Cuenco", precio: 1000 },
   { id: 3, producto: "Taza", precio: 1000 },
@@ -26,7 +26,7 @@ class Producto {
 }
 
 const almacenados = JSON.parse(localStorage.getItem("listaProductos"));
-const productos = [];
+const productosCarrito = [];
 for (const objeto of almacenados) productos.push(new Producto(objeto));
-for (const producto of productos) producto.sumaIva(); 
-/* Termina Local Storage /*
+for (const producto of productos) producto.sumaIva();
+/*  Termina Local Storage  */
