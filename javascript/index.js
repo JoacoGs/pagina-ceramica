@@ -100,7 +100,7 @@ const inventario = ["Tazas", "Bowls", "Mates", "Cuencos"];
 console.log(inventario.includes("Mates"));
 console.log(inventario.includes("Platos"));
 
-const productos = [
+/* const productos = [
   { id: 1, nombre: "Taza blanca", precio: 600 },
   { id: 2, nombre: "Cuenco blanco", precio: 700 },
   { id: 3, nombre: "Bowl gris", precio: 550 },
@@ -114,3 +114,12 @@ for (const producto of productos) {
                             <b> $ ${producto.precio}</b>`;
   document.body.appendChild(contenedor);
 }
+ */
+
+/* Destructuracion de arrays */
+const usuarios = ["Joaquin", "Jeronimo", "Marina"];
+
+const [a, , b] = usuarios;
+
+/* Spread de array */
+console.log(...usuarios);

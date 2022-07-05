@@ -30,3 +30,6 @@ const productosCarrito = [];
 for (const objeto of almacenados) productos.push(new Producto(objeto));
 for (const producto of productos) producto.sumaIva();
 /*  Termina Local Storage  */
+
+/* Operador logico OR */
+const carrito = JSON.parse(localStorage.getItem("listaProductos")) || [];
