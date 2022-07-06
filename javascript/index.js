@@ -4,9 +4,15 @@ function solicitarNombre() {
   let apellidoIngresado = prompt("Ingresar apellido");
 
   if (nombreIngresado != "" && apellidoIngresado != "") {
-    alert("Nombre: " + nombreIngresado + "\nApellido: " + apellidoIngresado);
+    swal.fire({
+      text: "Nombre: " + nombreIngresado + "\nApellido: " + apellidoIngresado,
+      icon: "success",
+    });
   } else {
-    alert("Error: Ingresar nombre y apellido");
+    swal.fire({
+      text: "Error: Ingresar nombre y apellido",
+      icon: "error",
+    });
   }
 }
 solicitarNombre();
@@ -116,7 +122,7 @@ for (const producto of productos) {
 }
  */
 
-/* Destructuracion de arrays */
+/* Desestructuración de arrays */
 const usuarios = ["Joaquin", "Jeronimo", "Marina"];
 
 const [a, , b] = usuarios;
