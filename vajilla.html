@@ -22,14 +22,14 @@
     <header class="container">
         <div class="row">
             <div class="col-md-4">
-                <nav class="navbar navbar-light ">
+                <!-- <nav class="navbar navbar-light ">
                     <div class="container-fluid">
                       <form class="d-flex">
                         <input class="form-control me-2 btn-outline-dark fondobutton" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn fondobutton" type="submit">Buscar</button>
                       </form>
                     </div>
-                  </nav>
+                  </nav> -->
             </div>
             <div class="col-md-4 text-center">
                 <a id="logo" href="index.html"><img class="rounded animate__animated animate__backInUp logo" src="images/logo.jpg" alt="Logo"></a>
@@ -37,14 +37,14 @@
             <div class="col-md-4">
                 <nav>
                     <ul class="menu1">
-                        <li><a href="#"> Crear cuenta</a></li>
+                        <li><a href="login.html"> Crear cuenta</a></li>
                         <li>|</li>
-                        <li><a href="#"> Iniciar sesión</a></li>
-                        <li><a class="cart" href="carrito.html">
+                        <li><a href="login.html"> Iniciar sesión</a></li>
+                       <!--  <li><a class="cart" href="carrito.html">
                             <img class="cartIcon" src="images/carrito.png" alt="foto de carrito">
                             <span id="cartCounter"></span>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
             </div>
@@ -97,175 +97,174 @@
           <div class="col-md-3">
             <p>Inicio / <b>Vajilla</b></p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
           </div>
-          <div class="col-md-3">
-            <div class="dropdown">
-              <button class="btn  dropdown-toggle fondobutton sup" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Ordenar por
-              </button>
-              <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1" style="background-color: #b9936c;" >
-                <li><a class="dropdown-item" href="#">Precio mas bajo</a></li>
-                <li><a class="dropdown-item" href="#">Precio mas alto</a></li>
-                <li><a class="dropdown-item" href="#">Mas vendido</a></li>
-              </ul>
-            </div>
+          <div class="col-md-4">
+            <nav class="navbar navbar-light ">
+              <div class="container-fluid">
+                <form class="d-flex">
+                  <input class="form-control me-2 btn-outline-dark fondobutton" type="text" id="searcher" placeholder="Buscar..." aria-label="Search">
+                </form>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
-      <!-- START SECTION STORE -->
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-md-2 fondolista">
-                  <nav>   
-                      <ul class="lista">
-                        <li><a href="vajilla.html#cuencos">Cuencos</a></li>
-                        <li><a href="vajilla.html#bowls">Bowls</a></li> 
-                        <li><a href="vajilla.html#tazas">Tazas</a></li>                      
-                        <li><a href="vajilla.html#mates">Mates</a></li>
-                      </ul>
-                    </nav>
-              </div>
-              <div class="col-md-3">
-                <div class="item">
-                  <hr><p class="item-title button"> Cuenco blanco </p>
-                  <img id="cuencos" class="item-image" src="images/cuenco.jpg" class="img-fluid mx-auto d-block" alt="Cuenco">
-                  <div class="item-details">                   
-                    <h4 class="item-price precio buttonprice"> $1500 </h4>
-                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+        <!-- START SECTION STORE -->
+      <ul id="articlelist">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 fondolista">
+                    <nav>   
+                        <ul class="lista">
+                          <li><a href="vajilla.html#cuencos">Cuencos</a></li>
+                          <li><a href="vajilla.html#bowls">Bowls</a></li> 
+                          <li><a href="vajilla.html#tazas">Tazas</a></li>                      
+                          <li><a href="vajilla.html#mates">Mates</a></li>
+                        </ul>
+                      </nav>
+                </div>
+                <div class="col-md-3">
+                  <div class="item pottery">
+                    <hr><p class="item-title button"> Cuenco blanco </p>
+                    <img id="cuencos" class="item-image" src="images/cuenco.jpg" class="img-fluid mx-auto d-block" alt="Cuenco">
+                    <div class="item-details">                   
+                      <h4 class="item-price precio buttonprice"> $1500 </h4>
+                      <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                    </div> 
+                  </div>                         
+                </div>
+                <div class="col-md-3">
+                  <div class="item pottery">
+                    <hr><p class="item-title button"> Cuenco gris </p>
+                    <img class="item-image" src="images/cuencogris.jpg" class="img-fluid mx-auto d-block" alt="Cuenco gris">
+                    <div class="item-details">                    
+                      <h4 class="item-price precio buttonprice"> $2000 </h4>
+                      <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                  </div>               
+                </div>
+                <div class="col-md-3">
+                  <div class="item pottery">
+                    <hr><p class="item-title button"> Cuenco verde agua </p>
+                    <img class="item-image" src="images/cuenco2.jpg" class="img-fluid mx-auto d-block" alt="Cuenco verde agua">
+                    <div class="item-details">                 
+                      <h4 class="item-price precio buttonprice"> $2000 </h4>
+                      <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                    </div>
                   </div> 
-                </div>                         
-              </div>
-              <div class="col-md-3">
-                <div class="item">
-                  <hr><p class="item-title button"> Cuenco gris </p>
-                  <img class="item-image" src="images/cuencogris.jpg" class="img-fluid mx-auto d-block" alt="Cuenco gris">
-                  <div class="item-details">                    
-                    <h4 class="item-price precio buttonprice"> $2000 </h4>
-                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
-                  </div>
-                </div>               
-              </div>
-              <div class="col-md-3">
-                <div class="item">
-                  <hr><p class="item-title button"> Cuenco verde agua </p>
-                  <img class="item-image" src="images/cuenco2.jpg" class="img-fluid mx-auto d-block" alt="Cuenco verde agua">
-                  <div class="item-details">                 
-                    <h4 class="item-price precio buttonprice"> $2000 </h4>
-                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
-                  </div>
                 </div> 
-              </div> 
-          </div>
-      </div>
-      <div class="container-fluid">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-3">
+                  <div class="item pottery">
+                    <hr><p class="item-title button"> Bowl sandia </p>
+                    <img id="bowls" class="item-image" src="images/bowlsandia.jpg" class="img-fluid mx-auto d-block" alt="Bowl sandia">
+                    <div class="item-details">                  
+                      <h4 class="item-price precio buttonprice"> $800 </h4>
+                      <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="item pottery">
+                    <hr><p class="item-title button"> Bowl gris </p>
+                    <img class="item-image" src="images/bowls.jpg" class="img-fluid mx-auto d-block" alt="Bowls grises">
+                    <div class="item-details">                
+                      <h4 class="item-price precio buttonprice"> $1300 </h4>
+                      <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="item pottery">
+                    <hr><p class="item-title button"> Bowl azul </p>
+                    <img class="item-image" src="images/bowlazul.jpg" class="img-fluid mx-auto d-block" alt="Bowl azul">
+                    <div class="item-details">                 
+                      <h4 class="item-price precio buttonprice"> $1300 </h4>
+                      <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                  </div>            
+                </div> 
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-3">
+                  <div class="item pottery">
+                    <hr><p class="item-title button"> Taza blanca </p>
+                    <img id="tazas" class="item-image" src="images/Taza.JPG" class="img-fluid mx-auto d-block" alt="taza blanca">
+                    <div class="item-details">
+                      <h4 class="item-price precio buttonprice"> $700 </h4>
+                      <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                  </div>                
+                </div>
+                <div class="col-md-3">
+                  <div class="item pottery">
+                    <hr><p class="item-title button"> Tazon mono </p>
+                    <img class="item-image" src="images/tazamono.jpg" class="img-fluid mx-auto d-block" alt="tazon de mono">
+                    <div class="item-details">              
+                      <h4 class="item-price precio buttonprice"> $1200 </h4>
+                      <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                  </div>            
+                </div>
+                <div class="col-md-3">
+                  <div class="item pottery">
+                    <hr><p class="item-title button"> Taza cangrejo </p>
+                    <img class="item-image" src="images/tazacangrejo.jpg" class="img-fluid mx-auto d-block" alt="taza de cangrejo">
+                    <div class="item-details">                
+                      <h4 class="item-price precio buttonprice"> $1000 </h4>
+                      <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                  </div>              
+                </div> 
+            </div>
+        </div>
+        <div class="container-fluid">
           <div class="row">
               <div class="col-md-2">
               </div>
               <div class="col-md-3">
-                <div class="item">
-                  <hr><p class="item-title button"> Bowl sandia </p>
-                  <img id="bowls" class="item-image" src="images/bowlsandia.jpg" class="img-fluid mx-auto d-block" alt="Bowl sandia">
-                  <div class="item-details">                  
+                <div class="item pottery">
+                  <hr><p class="item-title button"> Mate gato</p>
+                  <img class="item-image" src="images/mategato.jpg" class="img-fluid mx-auto d-block" alt="Mate de gato">
+                  <div class="item-details">                
                     <h4 class="item-price precio buttonprice"> $800 </h4>
                     <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
                   </div>
-                </div>
+                </div>       
               </div>
               <div class="col-md-3">
-                <div class="item">
-                  <hr><p class="item-title button"> Bowl gris </p>
-                  <img class="item-image" src="images/bowls.jpg" class="img-fluid mx-auto d-block" alt="Bowls grises">
-                  <div class="item-details">                
-                    <h4 class="item-price precio buttonprice"> $1300 </h4>
+                <div class="item pottery">
+                  <hr><p class="item-title button"> Mate gris </p>
+                  <img id="mates" class="item-image" src="images/mate.jpg" class="img-fluid mx-auto d-block" alt="Mate gris">
+                  <div class="item-details">             
+                    <h4 class="item-price precio buttonprice"> $800 </h4>
                     <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
                   </div>
-                </div>
+                </div>             
               </div>
               <div class="col-md-3">
-                <div class="item">
-                  <hr><p class="item-title button"> Bowl azul </p>
-                  <img class="item-image" src="images/bowlazul.jpg" class="img-fluid mx-auto d-block" alt="Bowl azul">
-                  <div class="item-details">                 
-                    <h4 class="item-price precio buttonprice"> $1300 </h4>
-                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
-                  </div>
-                </div>            
-              </div> 
-          </div>
-      </div>
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-md-2">
-              </div>
-              <div class="col-md-3">
-                <div class="item">
-                  <hr><p class="item-title button"> Taza blanca </p>
-                  <img id="tazas" class="item-image" src="images/Taza.JPG" class="img-fluid mx-auto d-block" alt="taza blanca">
+                <div class="item pottery">
+                  <hr><p class="item-title button"> Mate azul </p>
+                  <img class="item-image" src="images/matezul.jpg" class="img-fluid mx-auto d-block" alt="Mate azul">
                   <div class="item-details">
-                    <h4 class="item-price precio buttonprice"> $700 </h4>
-                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
-                  </div>
-                </div>                
-              </div>
-              <div class="col-md-3">
-                <div class="item">
-                  <hr><p class="item-title button"> Tazon mono </p>
-                  <img class="item-image" src="images/tazamono.jpg" class="img-fluid mx-auto d-block" alt="tazon de mono">
-                  <div class="item-details">              
-                    <h4 class="item-price precio buttonprice"> $1200 </h4>
-                    <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
-                  </div>
-                </div>            
-              </div>
-              <div class="col-md-3">
-                <div class="item">
-                  <hr><p class="item-title button"> Taza cangrejo </p>
-                  <img class="item-image" src="images/tazacangrejo.jpg" class="img-fluid mx-auto d-block" alt="taza de cangrejo">
-                  <div class="item-details">                
-                    <h4 class="item-price precio buttonprice"> $1000 </h4>
+                    <h4 class="item-price precio buttonprice"> $750 </h4>
                     <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
                   </div>
                 </div>              
               </div> 
           </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-3">
-              <div class="item">
-                <hr><p class="item-title button"> Mate gris </p>
-                <img id="mates" class="item-image" src="images/mate.jpg" class="img-fluid mx-auto d-block" alt="Mate gris">
-                <div class="item-details">             
-                  <h4 class="item-price precio buttonprice"> $800 </h4>
-                  <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
-                </div>
-              </div>       
-            </div>
-            <div class="col-md-3">
-              <div class="item">
-                <hr><p class="item-title button"> Mate gato</p>
-                <img class="item-image" src="images/mategato.jpg" class="img-fluid mx-auto d-block" alt="Mate de gato">
-                <div class="item-details">                
-                  <h4 class="item-price precio buttonprice"> $800 </h4>
-                  <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
-                </div>
-              </div>             
-            </div>
-            <div class="col-md-3">
-              <div class="item">
-                <hr><p class="item-title button"> Mate azul </p>
-                <img class="item-image" src="images/matezul.jpg" class="img-fluid mx-auto d-block" alt="Mate azul">
-                <div class="item-details">
-                  <h4 class="item-price precio buttonprice"> $750 </h4>
-                  <button class="item-button btn btn-outline-dark fondobutton3 addToCart">AÑADIR AL CARRITO</button>
-                </div>
-              </div>              
-            </div> 
         </div>
-    </div>
+      </ul>
     </article>
     <!-- END SECTION STORE -->
     <!-- START SHOPPING CART -->
@@ -300,7 +299,7 @@
             <div class="col-12">
                 <div class="shopping-cart-total d-flex align-items-center">
                     <p class="mb-0">Total</p>
-                    <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                    <p class="ml-4 mb-0 shoppingCartTotal">0$</p>
                     <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
                         data-delay="2000">
                         <div class="toast-header">

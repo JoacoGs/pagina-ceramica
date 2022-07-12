@@ -1,4 +1,4 @@
-function solicitarNombre() {
+/* function solicitarNombre() {
   let nombreIngresado = prompt("Ingresar nombre");
 
   let apellidoIngresado = prompt("Ingresar apellido");
@@ -15,7 +15,7 @@ function solicitarNombre() {
     });
   }
 }
-solicitarNombre();
+solicitarNombre(); */
 
 /* sumando cantidad de productos
  */

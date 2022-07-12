@@ -125,3 +125,14 @@ function comprarButtonClicked() {
   shoppingCartItemsContainer.innerHTML = "";
   updateShoppingCartTotal();
 }
+
+document.addEventListener("keyup", (e) => {
+  if (e.target.matches("#searcher")) {
+    if (e.key === "Escape") e.target.value = "";
+    document.querySelectorAll(".pottery").forEach((vajilla) => {
+      vajilla.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+        ? vajilla.classList.remove("filter")
+        : vajilla.classList.add("filter");
+    });
+  }
+});

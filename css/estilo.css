@@ -149,6 +149,9 @@
 .shopping-cart-total {
   min-height: 96px; }
 
+.filter {
+  display: none; }
+
 .a {
   text-decoration: none;
   color: black;
@@ -233,3 +236,54 @@
 .texto {
   margin-top: 1rem;
   font-size: 18px; }
+
+.loginc {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+.loginceramica {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #b9936c, #dac292); }
+
+.formlogin {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  text-align: center;
+  padding: 20px 25px;
+  box-shadow: 0 5px 10px #4e300d; }
+  .formlogin h1 {
+    color: #252525;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px; }
+  .formlogin label {
+    margin-bottom: 35px; }
+    .formlogin label .fa-solid {
+      font-size: 20px;
+      color: #b9936c;
+      margin-right: 10px; }
+    .formlogin label input {
+      outline: none;
+      border: none;
+      color: #252525;
+      border-bottom: solid 1px #b9936c;
+      padding: 0 5px;
+      font-size: 18px; }
+      .formlogin label input ::placeholder {
+        color: gray; }
+  .formlogin .link {
+    color: #252525;
+    margin-bottom: 15px; }
+  .formlogin button {
+    color: #fff;
+    border: none;
+    background: linear-gradient(to bottom right, #b9936c, #dac292);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px; }
