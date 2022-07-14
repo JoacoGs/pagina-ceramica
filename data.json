@@ -1,0 +1,14 @@
+[
+  { "nombre": "Cuenco blanco", "precio": 1500, "id": 1 },
+  { "nombre": "Cuenco gris", "precio": 2000, "id": 2 },
+  { "nombre": "Cuenco verde agua", "precio": 2000, "id": 3 },
+  { "nombre": "Bowl sandia", "precio": 800, "id": 4 },
+  { "nombre": "Bowl gris", "precio": 1300, "id": 5 },
+  { "nombre": "Bowl azul", "precio": 1300, "id": 6 },
+  { "nombre": "Taza blanca", "precio": 700, "id": 7 },
+  { "nombre": "Tazon mono", "precio": 1200, "id": 8 },
+  { "nombre": "Taza cangrejo", "precio": 1000, "id": 9 },
+  { "nombre": "Mate gato", "precio": 800, "id": 10 },
+  { "nombre": "Mate gris", "precio": 800, "id": 11 },
+  { "nombre": "Mate azul", "precio": 750, "id": 12 }
+]
