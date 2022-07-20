@@ -1,11 +1,3 @@
-/* function initializeCart() {
-  if (!window.localStorage.hasOwnProperty("cart")) {
-    window.localStorage.cart = [];
-  }
-}
-
-initializeCart(); */
-
 const addToShoppingCartButtons = document.querySelectorAll(".addToCart");
 addToShoppingCartButtons.forEach((addToCartButton) => {
   addToCartButton.addEventListener("click", addToCartClicked);
@@ -126,6 +118,8 @@ function comprarButtonClicked() {
   updateShoppingCartTotal();
 }
 
+/* SEARCHER FILTER */
+
 document.addEventListener("keyup", (e) => {
   if (e.target.matches("#searcher")) {
     if (e.key === "Escape") e.target.value = "";
@@ -137,9 +131,10 @@ document.addEventListener("keyup", (e) => {
   }
 });
 
-const lista = document.querySelectorAll("#listado");
+/* PRODUCTS JSON */
 
-fetch("/data.json")
+const lista = document.querySelector("#listado");
+fetch("productos.json")
   .then((res) => res.json())
   .then((data) => {
     data.forEach((producto) => {
