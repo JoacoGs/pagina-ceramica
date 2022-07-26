@@ -12,7 +12,6 @@ const shoppingCartItemsContainer = document.querySelector(
 
 function addToCartClicked(event) {
   const button = event.target;
-  console.log(event);
   const item = button.closest(".item");
 
   const itemTitle = item.querySelector(".item-title").textContent;
@@ -118,7 +117,7 @@ function comprarButtonClicked() {
   updateShoppingCartTotal();
 }
 
-/* SEARCHER FILTER */
+/* SEARCH FILTER */
 
 document.addEventListener("keyup", (e) => {
   if (e.target.matches("#searcher")) {
@@ -133,7 +132,7 @@ document.addEventListener("keyup", (e) => {
 
 /* PRODUCTS JSON */
 
-const lista = document.querySelector("#listado");
+/* const lista = document.querySelector("#listado");
 fetch("productos.json")
   .then((res) => res.json())
   .then((data) => {
@@ -149,3 +148,4 @@ fetch("productos.json")
       lista.append(li);
     });
   });
+ */
